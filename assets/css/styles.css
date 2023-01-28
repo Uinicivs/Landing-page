@@ -1,3 +1,9 @@
+:root{
+    --primary-color: black;
+    --second-color: #d0c49d;
+    --gap: 3rem;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +15,8 @@ html{
 
 body{
     font-family: 'Open Sans', sans-serif;
-    font-size: 1.6rem;
+    font-size: 2rem;
+    color: var(--primary-color);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -42,12 +49,25 @@ h6{
 }
 
 .main-bg{
-    background-image: url("../img/flat-mountains.svg");
+    background-image: url("../img/Simple Shiny.svg");
     background-size: cover;
     background-position: center center;
+    color: var(--second-color);
+}
+
+.minor-bg{
+    background-image: url("../img/Icon Grid.svg");
+    background-size: cover;
+    background-position: center center;
+    color: var(--second-color);
 }
 
 .main-content{
     max-width: 1200px;
     margin: 0 auto;
+    padding: var(--gap);
+}
+
+.section{
+    min-height: 100vh;
 }
